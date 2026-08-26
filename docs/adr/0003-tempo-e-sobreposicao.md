@@ -15,7 +15,7 @@ O sistema utilizará:
 - `America/Sao_Paulo` como fuso horário de negócio;
 - `ZoneId` para representar o fuso, evitando um deslocamento UTC fixo;
 - `Instant` para comparação e persistência;
-- ISO 8601 com deslocamento UTC nas entradas e respostas da API;
+- ISO 8601 com deslocamento UTC nas entradas e respostas da API; valores de API sem deslocamento serão rejeitados;
 - intervalos no formato semiaberto `[início, término)`.
 
 O término deverá ser obrigatoriamente posterior ao início.
@@ -58,7 +58,7 @@ As respostas serão convertidas para o fuso de negócio na apresentação. A apl
 ### Negativas
 
 - A conversão entre horário local e `Instant` deverá ser explícita;
-- Entradas sem fuso serão interpretadas conforme o fuso de negócio;
+- Valores locais recebidos pela interface serão interpretados no fuso de negócio, enquanto valores de API sem deslocamento serão rejeitados;
 - Casos de limite exigirão testes específicos.
 
 ## Verificação futura
