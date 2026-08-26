@@ -8,6 +8,24 @@ Este diretório reúne as decisões técnicas que orientam o desenvolvimento do 
 - **Aceita:** decisão aprovada pelos quatro integrantes;
 - **Substituída:** decisão trocada por outro ADR, sem apagar o histórico.
 
+## Estrutura obrigatória de um ADR
+
+Todo novo ADR deverá conter:
+
+- identificador e título;
+- status da decisão;
+- data;
+- autores ou proponentes;
+- Issue relacionada;
+- contexto e problema analisado;
+- alternativas consideradas;
+- decisão adotada;
+- consequências positivas e negativas;
+- impactos de segurança, quando aplicável;
+- forma de verificação futura.
+
+Um ADR não poderá ser considerado completo se alguma seção obrigatória estiver ausente. Decisões substituídas permanecerão no histórico.
+
 ## Índice de decisões
 
 | ADR | Decisão | Status |
