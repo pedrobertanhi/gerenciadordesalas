@@ -8,7 +8,7 @@ Sistema acadêmico em **Java 21 e Spring Boot 3.x** para alocar salas, professor
 
 **Planejamento e documentação. A aplicação ainda não foi implementada.**
 
-- 110 Issues abertas e ainda não atribuídas.
+- 110 Issues abertas e atribuídas.
 - 584 pontos planejados; 552 até a semana 46.
 - Semana 34 possui trabalho atrasado que precisa ser recuperado com evidência.
 - Resultados, cobertura e segurança permanecem pendentes até existirem execuções reais.
