@@ -46,7 +46,7 @@ A máquina de estados utiliza negação por padrão: qualquer transição não d
 
 ## Alterações em reservas
 
-O Solicitante pode alterar somente uma reserva própria que ainda não tenha iniciado.
+O Solicitante pode alterar somente uma reserva própria nos estados `SOLICITADA` ou `APROVADA`.
 
 Devem ser validados novamente:
 
