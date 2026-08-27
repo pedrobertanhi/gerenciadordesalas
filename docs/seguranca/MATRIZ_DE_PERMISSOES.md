@@ -65,7 +65,7 @@ A matriz atende principalmente ao RF-01 e complementa as regras de propriedade, 
 | Criar reserva | C | N | N | Somente em nome próprio e com período válido |
 | Consultar reserva própria | C | N | N | Propriedade confirmada |
 | Consultar reservas operacionais | N | C | P | Responsável acessa apenas as necessárias ao trabalho |
-| Alterar reserva | C | N | N | Propriedade confirmada e utilização não iniciada |
+| Alterar reserva | C | N | N | Propriedade confirmada e estado `SOLICITADA` ou `APROVADA` |
 | Cancelar reserva | C | N | N | Propriedade confirmada e estado permitido |
 | Aprovar recurso restrito | N | C | N | Estado `SOLICITADA` e recursos disponíveis |
 | Rejeitar solicitação | N | C | N | Estado `SOLICITADA` e justificativa obrigatória |
