@@ -68,7 +68,7 @@ A matriz atende principalmente ao RF-01 e complementa as regras de propriedade, 
 | Alterar reserva | C | N | N | Propriedade confirmada e estado `SOLICITADA` ou `APROVADA` |
 | Cancelar reserva | C | N | N | Propriedade confirmada e estado permitido |
 | Aprovar recurso restrito | N | C | N | Estado `SOLICITADA` e recursos disponíveis |
-| Rejeitar solicitação | N | C | N | Estado `SOLICITADA` e justificativa obrigatória |
+| Rejeitar solicitação | N | C | N | Recurso restrito, estado `SOLICITADA` e justificativa obrigatória |
 | Iniciar utilização | N | C | N | Estado `APROVADA` e horário alcançado |
 | Concluir utilização | N | C | N | Estado `EM_USO` e sem devolução pendente |
 | Registrar não comparecimento | N | C | N | Estado `APROVADA` e horário já iniciado |
