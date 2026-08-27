@@ -24,7 +24,7 @@ erDiagram
     MATERIAL ||--o{ RESERVATION_MATERIAL : compoe
 
     ROOM o|--o{ MAINTENANCE : recebe
-    MATERIAL ||--o{ MAINTENANCE : recebe
+    MATERIAL o|--o{ MAINTENANCE : recebe
     USER ||--o{ MAINTENANCE : cria
 
     RESERVATION ||--o{ MATERIAL_MOVEMENT : gera
