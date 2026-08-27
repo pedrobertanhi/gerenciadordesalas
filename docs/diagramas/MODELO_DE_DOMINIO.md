@@ -23,7 +23,7 @@ erDiagram
     RESERVATION ||--o{ RESERVATION_MATERIAL : possui
     MATERIAL ||--o{ RESERVATION_MATERIAL : compoe
 
-    ROOM ||--o{ MAINTENANCE : recebe
+    ROOM o|--o{ MAINTENANCE : recebe
     MATERIAL ||--o{ MAINTENANCE : recebe
     USER ||--o{ MAINTENANCE : cria
 
@@ -46,6 +46,7 @@ erDiagram
 - `ReservationMaterial` registra a quantidade de cada material;
 - uma sala ou material pode possuir vários registros de manutenção;
 - cada manutenção afeta exatamente uma sala ou um material;
+- como o Mermaid não representa diretamente a restrição XOR, é obrigatório informar somente uma das associações: sala ou material; ambas vazias ou ambas preenchidas são inválidas;
 - uma reserva pode gerar várias movimentações de materiais;
 - um usuário Responsável registra retiradas e devoluções;
 - um evento de auditoria pode possuir um usuário ou ter origem automática no Sistema;
