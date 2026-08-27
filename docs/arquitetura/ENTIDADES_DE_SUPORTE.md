@@ -85,7 +85,7 @@ Representa a retirada ou devolução de materiais de uma reserva.
 - a retirada acumulada não pode superar a quantidade reservada;
 - a devolução acumulada não pode superar a quantidade retirada;
 - retiradas e devoluções parciais são permitidas;
-- somente o Responsável ou o Administrador pode registrar movimentações;
+- somente o Responsável pode registrar movimentações;
 - movimentações confirmadas não devem ser apagadas.
 
 ## AuditEvent
