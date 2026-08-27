@@ -132,7 +132,9 @@ Toda ação automática deve registrar origem `SISTEMA`, instante e identificado
 
 ## Decisão de autorização
 
-Uma ação somente é permitida quando todas as condições forem verdadeiras:
+A ação `Autenticar` é a exceção à exigência de uma sessão já autenticada. Ela exige usuário ativo e credenciais válidas.
+
+Para as demais ações protegidas, a operação somente é permitida quando todas as condições forem verdadeiras:
 
 1. usuário autenticado;
 2. usuário ativo;
