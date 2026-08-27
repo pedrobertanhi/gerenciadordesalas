@@ -51,7 +51,7 @@ Representa um período em que uma sala ou material permanece indisponível.
 
 ### Regras
 
-- cada manutenção deve afetar exatamente uma sala ou um material;
+- constraint obrigatória: cada manutenção deve afetar exatamente uma sala ou um material; não é permitido que ambos sejam nulos nem que ambos sejam informados;
 - o término deve ser posterior ao início;
 - o período bloqueado não pode aceitar novas reservas;
 - conflitos com reservas existentes devem ser identificados antes da confirmação;
