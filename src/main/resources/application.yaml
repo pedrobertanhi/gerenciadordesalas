@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gerenciadordesalas
+    username: postgres
+    password: postgres  # Digite aqui a senha que você configurou na instalação (ex: postgres)
