@@ -16,6 +16,11 @@ Documentação oficial e versionada do **Gerenciador de Salas de Aula**.
 ## Arquitetura e decisões
 
 - [ATAM, utility tree, riscos e tradeoffs](arquitetura/ATAM.md)
+- [Modelo de domínio](arquitetura/MODELO_DE_DOMINIO.md)
+- [Entidades de suporte](arquitetura/ENTIDADES_DE_SUPORTE.md)
+- [Estados e transições da reserva](arquitetura/ESTADOS_DA_RESERVA.md)
+- [Revisão do modelo contra a especificação](arquitetura/REVISAO_DO_MODELO.md)
+- [Diagrama do modelo de domínio](diagramas/MODELO_DE_DOMINIO.md)
 - [Índice de ADRs](adr/README.md)
 - [Diagramas de contexto, componentes, dados e sequências](diagramas/README.md)
 - OpenAPI será gerada pela Issue #10.
@@ -37,6 +42,7 @@ Documentação oficial e versionada do **Gerenciador de Salas de Aula**.
 ## Segurança
 
 - [Plano de segurança e gates](seguranca/PLANO_DE_SEGURANCA.md)
+- [Matriz de permissões por perfil](seguranca/MATRIZ_DE_PERMISSOES.md)
 - [Modelo de ameaças](seguranca/MODELO_DE_AMEACAS.md)
 - [Registro de vulnerabilidades](seguranca/REGISTRO_DE_VULNERABILIDADES.md)
 - [Parecer final de segurança](seguranca/PARECER_DE_SEGURANCA.md)
