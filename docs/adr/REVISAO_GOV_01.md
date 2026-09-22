@@ -41,4 +41,4 @@ Comentários isolados e checkboxes marcados não substituem a aprovação formal
 
 Os ADRs permanecerão como `Proposta` durante esta revisão.
 
-Somente depois das três aprovações formais será criado um Pull Request separado para alterar os sete ADRs e o índice para `Aceita`. Esse Pull Request final também deverá preservar os commits e não utilizar squash.
+Somente depois das três aprovações formais será criado um Pull Request separado. Esse Pull Request final deverá receber novas aprovações formais de Enzo, Matheus e Davis antes de alterar os sete ADRs e o índice para `Aceita`, além de preservar os commits e não utilizar squash.
