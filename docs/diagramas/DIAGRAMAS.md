@@ -34,9 +34,9 @@ C4Component
     title Diagrama de Componentes - Backend Spring Boot
 
     Container_Boundary(backend, "Aplicação Backend") {
-        Component(security, "Segurança", "Spring Security", "Autentica usuários e autoriza SOLICITANTE, RESPONSAVEL e ADMINISTRADOR.")
+        Component(security, "Segurança", "Spring Security", "Autentica usuários e fornece identidade e perfis.")
         Component(web, "Apresentação", "Spring MVC e Thymeleaf", "Recebe requisições web e da API.")
-        Component(application, "Aplicação", "Serviços de aplicação", "Orquestra casos de uso, transações e permissões.")
+        Component(application, "Aplicação", "Serviços de aplicação", "Autoriza ações e orquestra casos de uso e transações.")
         Component(domain, "Domínio", "Java", "Aplica estados, disponibilidade, sobreposição e regras de negócio.")
         Component(persistence, "Persistência", "Spring Data JPA", "Consulta e persiste entidades.")
         Component(audit, "Auditoria", "Serviço de auditoria", "Registra ações sensíveis e transições.")
@@ -47,8 +47,9 @@ C4Component
     ContainerDb(postgres, "PostgreSQL", "Banco de dados", "Armazena os dados do sistema.")
     System_Ext(provider, "Provedor externo", "Serviço de notificações configurável.")
 
-    Rel(web, security, "Valida autenticação e autorização")
-    Rel(web, application, "Executa casos de uso")
+    Rel(web, security, "Autentica requisições")
+    Rel(web, application, "Encaminha requisições autenticadas")
+    Rel(application, security, "Consulta identidade e perfis")
     Rel(application, domain, "Aplica regras")
     Rel(application, persistence, "Consulta e salva")
     Rel(application, audit, "Registra eventos")
