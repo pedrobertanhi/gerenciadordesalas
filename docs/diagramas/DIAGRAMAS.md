@@ -2,6 +2,9 @@
 
 ## 1. Diagrama de Contexto (C4 - Nível 1)
 
+- **Versão:** 1.1
+- **Data:** 22/09/2026
+
 ```mermaid
 C4Context
     title Diagrama de Contexto - Sistema de Organização de Recursos
@@ -22,6 +25,9 @@ C4Context
 ```
 
 ## 2. Diagrama de Componentes (C4 - Nível 3)
+
+- **Versão:** 1.1
+- **Data:** 22/09/2026
 
 ```mermaid
 C4Component
@@ -54,6 +60,9 @@ C4Component
 ```
 
 ## 3. Diagrama Entidade-Relacionamento
+
+- **Versão:** 1.1
+- **Data:** 22/09/2026
 
 ```mermaid
 erDiagram
