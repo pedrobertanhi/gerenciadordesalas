@@ -59,7 +59,7 @@ C4Component
 erDiagram
     USER ||--o{ RESERVATION : cria
     USER o|--o| PROFESSOR : representa
-    PROFESSOR ||--o{ RESERVATION : participa
+    PROFESSOR o|--o{ RESERVATION : participa
     ROOM ||--o{ RESERVATION : recebe
 
     RESERVATION ||--o{ RESERVATION_MATERIAL : possui
@@ -67,6 +67,7 @@ erDiagram
 
     ROOM o|--o{ MAINTENANCE : recebe
     MATERIAL o|--o{ MAINTENANCE : recebe
+    %% Constraint: MAINTENANCE references exactly one resource: room_id XOR material_id.
     USER ||--o{ MAINTENANCE : cria
 
     RESERVATION ||--o{ MATERIAL_MOVEMENT : gera
@@ -113,7 +114,7 @@ erDiagram
     RESERVATION {
         BIGINT id PK
         BIGINT requester_id FK
-        BIGINT professor_id FK
+        BIGINT professor_id FK "nullable"
         BIGINT room_id FK
         TIMESTAMP starts_at
         TIMESTAMP ends_at
@@ -129,8 +130,8 @@ erDiagram
 
     MAINTENANCE {
         BIGINT id PK
-        BIGINT room_id FK
-        BIGINT material_id FK
+        BIGINT room_id FK "nullable; XOR material_id"
+        BIGINT material_id FK "nullable; XOR room_id"
         BIGINT created_by FK
         TIMESTAMP starts_at
         TIMESTAMP ends_at
