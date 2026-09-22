@@ -16,6 +16,8 @@ Cada integrante deverá conferir:
 
 ## Documentos obrigatórios
 
+- [PRD — Requisitos e escopo](../PRD.md);
+- [Índice de ADRs e decisões pendentes](README.md);
 - [ADR-001 — Stack tecnológica](0001-stack-tecnologica.md);
 - [ADR-002 — Interface web e OpenAPI](0002-interface-web-e-openapi.md);
 - [ADR-003 — Tempo e sobreposição](0003-tempo-e-sobreposicao.md);
